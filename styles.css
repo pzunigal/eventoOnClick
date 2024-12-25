@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    padding-left: 20px;
+}
+
+header {
+    background-color: #dcdcdc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+header button {
+    width: 130px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.definitions {
+    flex: 3;
+}
+
+.definition {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.definition h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.definition p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.definition button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.definition button:hover {
+    background-color: #006400;
+}
+
+.sidebar {
+    height: 100%;
+    flex: 1;
+    margin-left: 20px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sidebar button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar button:hover {
+    background-color: #218838;
+}

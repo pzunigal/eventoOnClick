@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento On Click</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Petlopedia</h1>
+        <input type="text" placeholder="Busca Mascotas">
+        <button id="loginButton">Iniciar sesión</button>
+    </header>
+    <div class="container">
+        <div class="definitions">
+            <div class="definition">
+                <h3 id="defitionTitle1">Gato Atigrado</h3>
+                <p><strong>Sustantivo</strong></p>
+                <p><strong>Plural:</strong> Gatos Atigrados</p>
+                <p>Un gato con un pelaje distintivo que presenta rayas, puntos o patrones en remolino, usualmente con una marca en forma de "M" en su frente.</p>
+                <button id="likeButton1">22 Me gusta</button>
+            </div>
+            <div class="definition">
+                <h3 id="definitionTitle2">Golden Retriever</h3>
+                <p><strong>sustantivo</strong></p>
+                <p><strong>Plural:</strong> Golden Retrievers</p>
+                <p>Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para recuperar objetos sin dañarlos.</p>
+                <button id="likeButton2">45 me gusta</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <p>Petlopedia está definida por TI</p>
+            <button id="addButton">Agregar Definición</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
