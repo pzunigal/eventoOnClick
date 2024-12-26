@@ -1,7 +1,7 @@
 # evento On Click con JavaScript
 Proyecto para al presionar un boton este interactue con la Pagina HTML y CSS
 
-![Portada del Proyecto]([https://pbs.twimg.com/media/GfOBrNBXsAAmy-x?format=jpg&name=small](https://pbs.twimg.com/media/GfrxzFDXQAIETgO?format=png&name=large))
+![Portada del Proyecto](https://pbs.twimg.com/media/GfrxzFDXQAIETgO?format=png&name=large)
 
 ## Tecnologías
 - HTML
