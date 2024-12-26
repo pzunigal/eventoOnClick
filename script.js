@@ -5,6 +5,9 @@ const likeButton2 = document.getElementById("likeButton2");
 const definitionTitle1 = document.getElementById("definitionTitle1");
 const definitionTitle2 = document.getElementById("definitionTitle2");
 
+likeButton1.textContent = "22 Me gusta";
+likeButton2.textContent = "45 Me gusta";
+
 button.onclick = function() {
     if (button.textContent === "Iniciar sesión") {
         button.textContent = "Cerrar sesión";
@@ -14,19 +17,22 @@ button.onclick = function() {
 };
 
 addButton.onclick = function() {
-    addButton.style.display = "none";
+    addButton.style.display = "none"; 
 };
 
-likeButton1.onclick = function() {
-    let count = parseInt(likeButton1.textContent.split(' ')[0]);
+function handleLike(button, title) {
+    let count = parseInt(button.textContent.split(' ')[0]);
     count++;
-    likeButton1.textContent = `${count} Me gusta`;
-    alert("Te gustó la definición: " + definitionTitle1.textContent);
+    button.textContent = count + " Me gusta";
+    setTimeout(() => {
+        alert("Te gustó la definición: " + title.textContent);
+    }, 10);
+}
+
+likeButton1.onclick = function() {
+    handleLike(likeButton1, definitionTitle1);
 };
 
 likeButton2.onclick = function() {
-    let count = parseInt(likeButton2.textContent.split(' ')[0]);
-    count++;
-    likeButton2.textContent = `${count} Me gusta`;
-    alert("Te gustó la definición: " + definitionTitle2.textContent);
+    handleLike(likeButton2, definitionTitle2);
 };
